@@ -109,3 +109,7 @@ Thumbs.db
 !wp-content/plugins/example-plugin/
 !wp-content/themes/abcd/
 !wp-content/themes/abcd-preinstall/
+
+# Just for this wpinitsetup branch purpose only, 
+# Not ignore wp-config.php to see all the useful settings
+!wp-config.php
