@@ -81,6 +81,9 @@ define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
+// **Add default theme HERE! Little trick to set the theme while installation of WP for the firs ttime.
+define( 'WP_DEFAULT_THEME', 'abcd-preinstall' ); // ** to use the basic setting upon installtion
+
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
