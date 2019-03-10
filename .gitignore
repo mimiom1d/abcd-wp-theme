@@ -109,3 +109,7 @@ Thumbs.db
 !wp-content/plugins/example-plugin/
 !wp-content/themes/abcd/
 !wp-content/themes/abcd-preinstall/
+!wp-content/themes/gulp-dev/
+!wp-content/plugins/*
+wp-content/plugins/akismet
+temp

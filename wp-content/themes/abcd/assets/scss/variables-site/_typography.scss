@@ -1,0 +1,20 @@
+// ** Sans Serif
+$font__sans_default:  "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+$font__sans1: 'Cabin';
+$font__sans2: 'Open Sans';
+$font__sans3: 'PT Sans';
+$font__sans4: 'Montserrat';
+$font__sans5: 'Hind';
+
+// ** Serif
+$font__serif_default: "Gerogia", "Cambria", "Times New Roman", Times, serif;
+$font__serif1: 'PT Serif';
+
+// ** Setup the main font
+$font__main: $font__sans2, $font__sans_default;
+$font__second: $font__sans2, $font__sans_default;
+$font__third: $font__sans2, $font__sans_default;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;

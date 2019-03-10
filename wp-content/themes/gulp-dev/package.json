@@ -1,0 +1,57 @@
+{
+  "nodeSassConfig": {
+    "binarySite": "https://github.com/sass/node-sass/releases/download"
+  },
+  "name": "abcd",
+  "version": "0.0.1",
+  "description": "Accessible WordPress theme utilizing flex layouts and modern development practices.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimimiom1d/abcd-wp-theme"
+  },
+  "author": "Mimi Maldonado",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mimimiom1d/abcd-wp-theme/issues"
+  },
+  "homepage": "https://github.com/mimimiom1d/abcd-wp-theme#readme",
+  "NOTE": {
+    "npmInstall": "With node-sass initially, encountered error with undefined 'on.' Make sure to follow https://github.com/postcss/postcss/issues/766"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-image": "^2.7.2",
+    "gulp-jshint": "^2.0.2",
+    "gulp-newer": "^1.3.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-header": "^2.0.5",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-order": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.4",
+    "popper.js": "^1.14.4",
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "jquery.easing": "^1.4.1",
+    "simple-line-icons": "^2.4.1"
+  }
+}
