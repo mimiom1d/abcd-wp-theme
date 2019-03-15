@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Courier 10 Pitch';
+    src: url('hinted-Courier10PitchBT-Roman.eot');
+    src: local('Courier 10 Pitch'), local('Courier10PitchBT-Roman'),
+        url('hinted-Courier10PitchBT-Roman.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Courier10PitchBT-Roman.woff2') format('woff2'),
+        url('hinted-Courier10PitchBT-Roman.woff') format('woff'),
+        url('hinted-Courier10PitchBT-Roman.ttf') format('truetype'),
+        url('hinted-Courier10PitchBT-Roman.svg#Courier10PitchBT-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
