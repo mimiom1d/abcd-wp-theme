@@ -22,30 +22,21 @@
 # 20150302 Added composer.json as a whitelisted file
 # 20150227 Created as fork of https://gist.github.com/salcode/9940509,
 #   this version ignores all files by default
+# 20200526 Removed not-ignored from the top section and combine all at the bottom
 # -----------------------------------------------------------------
 
 # ignore everything in the root except the "wp-content" directory.
 /*
 !wp-content/
 
-# ignore everything in the "wp-content" directory, except:
-# mu-plugins, plugins, and themes directories
+# ignore everything in the "wp-content" directory, except for the not-ignored specified at the bottom
 wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
-
-# ignore all mu-plugins, plugins, and themes
-# unless explicitly whitelisted at the end of this file
-wp-content/mu-plugins/*
-wp-content/plugins/*
-wp-content/themes/*
 
 # ignore all files starting with . or ~
 .*
 ~*
 
-# ignore node dependency directories (used by grunt)
+# ignore node dependency directories (used by gulp)
 node_modules/
 
 # ignore OS generated files
@@ -105,11 +96,15 @@ Thumbs.db
 
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/mu-plugins/example-mu-plugin/
-!wp-content/plugins/example-plugin/
-!wp-content/themes/abcd/
-!wp-content/themes/abcd-preinstall/
+!wp-content/plugins/*
+!wp-content/mu-plugins/*
+!wp-content/plugins/*
+!wp-content/themes/*
+wp-content/plugins/akismet/
+!wp-content/themes/abcd/*
+!wp-content/themes/abcd-preinstall/*
+!wp-content/themes/gulp-dev/*
 
-# Just for this wpinitsetup branch purpose only, 
-# Not ignore wp-config.php to see all the useful settings
-!wp-config.php
+# ignore all temporary files/dirs
+**/temp/*
+**/xx_local/*
