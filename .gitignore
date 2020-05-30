@@ -100,8 +100,8 @@ Thumbs.db
 !wp-content/plugins/
 !wp-content/mu-plugins/
 !wp-content/themes/
-!wp-content/plugins/**
-!wp-content/mu-plugins/**
+!wp-content/plugins/*
+!wp-content/mu-plugins/*
 !wp-content/themes/*
 
 # plugin setting
@@ -111,6 +111,7 @@ wp-content/plugins/akismet/**
 !wp-content/themes/abcd/**
 !wp-content/themes/abcd-preinstall/**
 !wp-content/themes/gulp-dev/**
+!wp-content/themes/twentytwenty/**
 
 # other root files
 # Just for this wpinitsetup branch purpose only, 
