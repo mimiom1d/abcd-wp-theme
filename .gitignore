@@ -29,8 +29,9 @@
 /*
 !wp-content/
 
-# ignore everything in the "wp-content" directory, except for the not-ignored specified at the bottom
-wp-content/*
+# ignore everything in the "wp-content" directory, except for:
+# the unignored dirs/files specified at the bottom
+wp-content/**
 
 # ignore all files starting with . or ~
 .*
@@ -96,15 +97,26 @@ Thumbs.db
 
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/plugins/*
-!wp-content/mu-plugins/*
-!wp-content/plugins/*
+!wp-content/plugins/
+!wp-content/mu-plugins/
+!wp-content/themes/
+!wp-content/plugins/**
+!wp-content/mu-plugins/**
 !wp-content/themes/*
-wp-content/plugins/akismet/
-!wp-content/themes/abcd/*
-!wp-content/themes/abcd-preinstall/*
-!wp-content/themes/gulp-dev/*
+
+# plugin setting
+wp-content/plugins/akismet/**
+
+# theme setting
+!wp-content/themes/abcd/**
+!wp-content/themes/abcd-preinstall/**
+!wp-content/themes/gulp-dev/**
+
+# other root files
+# Just for this wpinitsetup branch purpose only, 
+# Unignore wp-config_forConfirmation.php to see all the useful settings
+!wp-config_forConfirmation.php
 
 # ignore all temporary files/dirs
-**/temp/*
-**/xx_local/*
+**/temp/**
+**/xx_local/**

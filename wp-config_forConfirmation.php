@@ -17,6 +17,13 @@
  *
  * @package WordPress
  */
+/**
+ * ABCD theme note:
+ * This wp-config_forConfirmation.php is just to confirm what should be at the end of setting.
+ * In order for you to utilize the wpinit setting, you have to run the app without wp-config.php.
+ * By default, wordpress will take care of setting up the all the variables as below
+ * at the time of installation nagivated from the UI, using wp-config-sample.php
+ */
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
@@ -34,7 +41,7 @@ define('DB_PASSWORD', ''); // ** Windows's default local env
 define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', 'utf8mb4_general_ci');
