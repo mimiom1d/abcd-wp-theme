@@ -109,9 +109,13 @@ wp-content/plugins/akismet/
 wp-content/plugins/akismet/**
 
 # theme setting
+!wp-content/themes/abcd/
 !wp-content/themes/abcd/**
+!wp-content/themes/abcd-preinstall/
 !wp-content/themes/abcd-preinstall/**
+!wp-content/themes/gulp-dev/
 !wp-content/themes/gulp-dev/**
+!wp-content/themes/twentytwenty/
 !wp-content/themes/twentytwenty/**
 
 # other root files
