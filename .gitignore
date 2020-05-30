@@ -105,6 +105,7 @@ Thumbs.db
 !wp-content/themes/*
 
 # plugin setting
+wp-content/plugins/akismet/
 wp-content/plugins/akismet/**
 
 # theme setting
