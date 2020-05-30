@@ -119,7 +119,6 @@ wp-content/plugins/akismet/**
 !wp-content/themes/twentytwenty/**
 
 # other root files
-# Just for this wpinitsetup branch purpose only, 
 # Unignore wp-config_forConfirmation.php to see all the useful settings
 !wp-config_forConfirmation.php
 
