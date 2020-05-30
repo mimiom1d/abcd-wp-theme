@@ -1,0 +1,74 @@
+{
+  "nodeSassConfig": {
+    "binarySite": "https://github.com/sass/node-sass/releases/download"
+  },
+  "name": "abcd",
+  "version": "0.0.1",
+  "description": "Accessible WordPress theme utilizing flex layouts and modern development practices.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimiom1d/abcd-wp-theme"
+  },
+  "author": "Mimi Maldonado",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mimiom1d/abcd-wp-theme/issues"
+  },
+  "homepage": "https://github.com/mimiom1d/abcd-wp-theme#readme",
+  "NOTE": {
+    "howToInstallNode-SassWithoutError": {
+      "reference": [
+          "https://stackoverflow.com/questions/54059433/after-npm-install-an-error-about-a-syntax-error-in-python-appears#answer-56314445",
+          "https://github.com/sass/node-sass/issues/1888#issuecomment-278908305",
+          "https://github.com/sass/node-sass/issues/1104#issuecomment-134505476"],
+      "step1": "Uninstall ALL the python installation from Windows. (For node-sass, only Python v2.7 will work.) And also, remove ANY PATHS associated with Python that are set currently",
+      "step2": "Delete .windows-build-tools dir from both `C:\\Users\\'your name'\\.windows-build-tools` and `C:\\Users\\'your name'\\AppData\\Roaming\\npm\\node_modules\\.windows-build-tools` if it has been there already",
+      "step3": "Delete node-gyp dir from `C:\\Users\\'your name'\\AppData\\Roaming\\npm\\node_modules\\node-gyp`",
+      "step4": "Open up PowerShell as Administrator and run `npm install -g node-gyp`.",
+      "step5": "Next, Run `npm install --global --production windows-build-tools`. This will install all the necessary bundles including Python 2.7 in C:/Users/your-name/.window-build-tools",
+      "step6": "Next, make sure to set the PYTHONPATH variable to correct path as [`C:\\Users\\lamus\\.windows-build-tools\\python27\\Lib`, `C:\\Users\\lamus\\.windows-build-tools\\python27\\DLLs`, `C:\\Users\\lamus\\.windows-build-tools\\python27\\Lib\\lib-tk`]]",
+      "step7": "Also make sure that `C:\\Users\\lamus\\.windows-build-tools\\python27\\` has been added to Path variable",
+      "step8": "Next, Run `npm config set python 'C:\\Users\\lamus\\.windows-build-tools\\python27\\python.exe'`. Do not forget to add `python.exe` at the end if you are copy/pasting. This will setup all the Python dependencies and path and executable ready correctly.",
+      "step9": "Next, you have to download `win32-x64-48_binding.node` file from `https://github.com/sass/node-sass-binaries/blob/master/win32-x64-48_binding.node`, store it into one place and set the SASS_BINARY_SITE PATH variable with the location you placed the .node executable like C:\\Users\\lamus\\safe_node_module\\win32-x64-64_binding.node`",
+      "step10": "Next, in the PowerShell, get to the dir you need to install node-sass, and run `rm -rf node_modules` to delete/clean-up the dir first",
+      "step11": "Finally run `npm i node-sass`. This time, everything should worked out fine! DONE!"
+    }
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-image": "^2.7.2",
+    "gulp-jshint": "^2.0.2",
+    "gulp-newer": "^1.3.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-header": "^2.0.5",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-order": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.4",
+    "popper.js": "^1.14.4",
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "jquery.easing": "^1.4.1",
+    "node-sass": "^4.14.1",
+    "simple-line-icons": "^2.4.1"
+  }
+}
