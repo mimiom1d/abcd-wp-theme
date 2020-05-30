@@ -22,30 +22,22 @@
 # 20150302 Added composer.json as a whitelisted file
 # 20150227 Created as fork of https://gist.github.com/salcode/9940509,
 #   this version ignores all files by default
+# 20200526 Removed not-ignored from the top section and combine all at the bottom
 # -----------------------------------------------------------------
 
 # ignore everything in the root except the "wp-content" directory.
 /*
 !wp-content/
 
-# ignore everything in the "wp-content" directory, except:
-# mu-plugins, plugins, and themes directories
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
-
-# ignore all mu-plugins, plugins, and themes
-# unless explicitly whitelisted at the end of this file
-wp-content/mu-plugins/*
-wp-content/plugins/*
-wp-content/themes/*
+# ignore everything in the "wp-content" directory, except for:
+# the unignored dirs/files specified at the bottom
+wp-content/**
 
 # ignore all files starting with . or ~
 .*
 ~*
 
-# ignore node dependency directories (used by grunt)
+# ignore node dependency directories (used by gulp)
 node_modules/
 
 # ignore OS generated files
@@ -105,11 +97,32 @@ Thumbs.db
 
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/mu-plugins/example-mu-plugin/
-!wp-content/plugins/example-plugin/
-!wp-content/themes/abcd/
-!wp-content/themes/abcd-preinstall/
-!wp-content/themes/gulp-dev/
+!wp-content/plugins/
+!wp-content/mu-plugins/
+!wp-content/themes/
 !wp-content/plugins/*
-wp-content/plugins/akismet
-temp
+!wp-content/mu-plugins/*
+!wp-content/themes/*
+
+# plugin setting
+wp-content/plugins/akismet/
+wp-content/plugins/akismet/**
+
+# theme setting
+!wp-content/themes/abcd/
+!wp-content/themes/abcd/**
+!wp-content/themes/abcd-preinstall/
+!wp-content/themes/abcd-preinstall/**
+!wp-content/themes/gulp-dev/
+!wp-content/themes/gulp-dev/**
+!wp-content/themes/twentytwenty/
+!wp-content/themes/twentytwenty/**
+
+# other root files
+# Just for this wpinitsetup branch purpose only, 
+# Unignore wp-config_forConfirmation.php to see all the useful settings
+!wp-config_forConfirmation.php
+
+# ignore all temporary files/dirs
+**/temp/**
+**/xx_local/**
